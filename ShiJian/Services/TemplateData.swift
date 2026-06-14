@@ -1,0 +1,121 @@
+import Foundation
+
+struct TemplateData {
+    static let gradientTemplates: [ArtTemplate] = [
+        ArtTemplate(id: "night-ink", name: "夜墨金书", type: .gradient,
+                    bgConfig: .gradient(colors: ["#1a1a2e", "#16213e", "#0f3460"], angle: 180),
+                    defaultFontId: "ma-shan-zheng", defaultFontSize: 28, defaultColorHex: "#c8a46e"),
+        ArtTemplate(id: "ancient-scroll", name: "古卷宣纸", type: .gradient,
+                    bgConfig: .gradient(colors: ["#f5f0e6", "#ebe5d8", "#e0d8c8"], angle: 180),
+                    defaultFontId: "zcool-qingke", defaultFontSize: 26, defaultColorHex: "#4a3728"),
+        ArtTemplate(id: "misty-rain", name: "烟雨江南", type: .gradient,
+                    bgConfig: .gradient(colors: ["#bcc8d4", "#a0b0c0"], angle: 180),
+                    defaultFontId: "liu-jian-mao-cao", defaultFontSize: 28, defaultColorHex: "#2a3a4c"),
+        ArtTemplate(id: "chinese-ink", name: "水墨山水", type: .gradient,
+                    bgConfig: .gradient(colors: ["#d4d4d4", "#b8b8b8"], angle: 180),
+                    defaultFontId: "ma-shan-zheng", defaultFontSize: 28, defaultColorHex: "#2c2c2c"),
+        ArtTemplate(id: "deep-forest", name: "深林幽径", type: .gradient,
+                    bgConfig: .gradient(colors: ["#1a4a2e", "#0d3320"], angle: 180),
+                    defaultFontId: "long-cang", defaultFontSize: 28, defaultColorHex: "#f0e8d0"),
+        ArtTemplate(id: "sunset-glow", name: "落霞孤鹜", type: .gradient,
+                    bgConfig: .gradient(colors: ["#8b3a3a", "#5c2020"], angle: 180),
+                    defaultFontId: "zcool-xiaowei", defaultFontSize: 28, defaultColorHex: "#f5e6c8"),
+        ArtTemplate(id: "bamboo-dew", name: "青苔竹露", type: .gradient,
+                    bgConfig: .gradient(colors: ["#a8d8b9", "#5f8060"], angle: 135),
+                    defaultFontId: "lishu", defaultFontSize: 28, defaultColorHex: "#1c301d"),
+        ArtTemplate(id: "misty-indigo", name: "黛蓝微雨", type: .gradient,
+                    bgConfig: .gradient(colors: ["#2b3a4a", "#101f30"], angle: 180),
+                    defaultFontId: "fangsong", defaultFontSize: 26, defaultColorHex: "#cccccc"),
+        ArtTemplate(id: "sky-after-rain", name: "天青过雨", type: .gradient,
+                    bgConfig: .gradient(colors: ["#c4d6d6", "#8aa6a6"], angle: 45),
+                    defaultFontId: "noto-serif-sc", defaultFontSize: 26, defaultColorHex: "#2b3a3a"),
+        ArtTemplate(id: "rouge-makeup", name: "胭脂晚妆", type: .gradient,
+                    bgConfig: .gradient(colors: ["#9e2a2b", "#3f0c10"], angle: 225),
+                    defaultFontId: "zhi-mang-xing", defaultFontSize: 30, defaultColorHex: "#fceed1"),
+        ArtTemplate(id: "plum-snow", name: "落梅残雪", type: .gradient,
+                    bgConfig: .gradient(colors: ["#b83b5e", "#e2e2e2"], angle: 135),
+                    defaultFontId: "zhi-mang-xing", defaultFontSize: 28, defaultColorHex: "#4a121a"),
+        ArtTemplate(id: "morning-breeze", name: "晓风残月", type: .gradient,
+                    bgConfig: .gradient(colors: ["#a8c0c0", "#2f4f4f"], angle: 180),
+                    defaultFontId: "noto-serif-sc", defaultFontSize: 26, defaultColorHex: "#f5f7f8")
+    ]
+
+    static let solidTemplates: [ArtTemplate] = [
+        ArtTemplate(id: "vermillion", name: "朱砂赤", type: .solid,
+                    bgConfig: .solid(hex: "#b22222"),
+                    defaultFontId: "ma-shan-zheng", defaultFontSize: 28, defaultColorHex: "#f5e6c8"),
+        ArtTemplate(id: "imperial-blue", name: "靛蓝青", type: .solid,
+                    bgConfig: .solid(hex: "#1a3a5c"),
+                    defaultFontId: "zcool-xiaowei", defaultFontSize: 28, defaultColorHex: "#e8d5a0"),
+        ArtTemplate(id: "jade-green", name: "翡翠绿", type: .solid,
+                    bgConfig: .solid(hex: "#1a4a2e"),
+                    defaultFontId: "long-cang", defaultFontSize: 28, defaultColorHex: "#f0e8d0"),
+        ArtTemplate(id: "imperial-yellow", name: "明黄", type: .solid,
+                    bgConfig: .solid(hex: "#c8a415"),
+                    defaultFontId: "zcool-qingke", defaultFontSize: 28, defaultColorHex: "#2a1a00"),
+        ArtTemplate(id: "purple-ink", name: "紫墨", type: .solid,
+                    bgConfig: .solid(hex: "#2d1b4e"),
+                    defaultFontId: "ma-shan-zheng", defaultFontSize: 28, defaultColorHex: "#d4b8e8"),
+        ArtTemplate(id: "ink-black", name: "玄墨", type: .solid,
+                    bgConfig: .solid(hex: "#1a1a1a"),
+                    defaultFontId: "liu-jian-mao-cao", defaultFontSize: 28, defaultColorHex: "#e8e0d0"),
+        ArtTemplate(id: "bronze", name: "青铜", type: .solid,
+                    bgConfig: .solid(hex: "#5c5c3d"),
+                    defaultFontId: "noto-serif-sc", defaultFontSize: 28, defaultColorHex: "#e8e0c8"),
+        ArtTemplate(id: "cinnabar", name: "丹砂", type: .solid,
+                    bgConfig: .solid(hex: "#8b2500"),
+                    defaultFontId: "zhi-mang-xing", defaultFontSize: 28, defaultColorHex: "#f5e6c8"),
+        ArtTemplate(id: "autumn-aroma", name: "秋香", type: .solid,
+                    bgConfig: .solid(hex: "#d4c480"),
+                    defaultFontId: "lishu", defaultFontSize: 28, defaultColorHex: "#2d2b1c"),
+        ArtTemplate(id: "bamboo-green", name: "竹青", type: .solid,
+                    bgConfig: .solid(hex: "#5f8060"),
+                    defaultFontId: "shoujinti", defaultFontSize: 28, defaultColorHex: "#f4f8f4"),
+        ArtTemplate(id: "bamboo-moon", name: "竹月", type: .solid,
+                    bgConfig: .solid(hex: "#5a788a"),
+                    defaultFontId: "long-cang", defaultFontSize: 28, defaultColorHex: "#f0f4f7")
+    ]
+
+    static let presetTemplates: [ArtTemplate] = [
+        ArtTemplate(id: "preset-li-bai", name: "静夜思", type: .preset,
+                    bgConfig: .solid(hex: "#1a1a2e"),
+                    defaultFontId: "zhi-mang-xing", defaultFontSize: 32, defaultColorHex: "#c8a46e",
+                    presetText: "床前明月光\n疑是地上霜\n举头望明月\n低头思故乡", presetDirection: "vertical"),
+        ArtTemplate(id: "preset-su-shi", name: "水调歌头", type: .preset,
+                    bgConfig: .gradient(colors: ["#0f3460", "#16213e"], angle: 180),
+                    defaultFontId: "ma-shan-zheng", defaultFontSize: 26, defaultColorHex: "#e8d5a0",
+                    presetText: "明月几时有\n把酒问青天\n不知天上宫阙\n今夕是何年", presetDirection: "vertical"),
+        ArtTemplate(id: "preset-li-qingzhao", name: "如梦令", type: .preset,
+                    bgConfig: .solid(hex: "#b22222"),
+                    defaultFontId: "zcool-xiaowei", defaultFontSize: 28, defaultColorHex: "#f5e6c8",
+                    presetText: "昨夜雨疏风骤\n浓睡不消残酒\n试问卷帘人\n却道海棠依旧\n知否 知否\n应是绿肥红瘦", presetDirection: "vertical"),
+        ArtTemplate(id: "preset-wang-wei", name: "山居秋暝", type: .preset,
+                    bgConfig: .solid(hex: "#1a4a2e"),
+                    defaultFontId: "long-cang", defaultFontSize: 28, defaultColorHex: "#f0e8d0",
+                    presetText: "空山新雨后\n天气晚来秋\n明月松间照\n清泉石上流", presetDirection: "vertical"),
+        ArtTemplate(id: "preset-du-fu", name: "春望", type: .preset,
+                    bgConfig: .solid(hex: "#5c5c3d"),
+                    defaultFontId: "noto-serif-sc", defaultFontSize: 26, defaultColorHex: "#f0e8c8",
+                    presetText: "国破山河在\n城春草木深\n感时花溅泪\n恨别鸟惊心", presetDirection: "vertical"),
+        ArtTemplate(id: "preset-xin-qiji", name: "青玉案", type: .preset,
+                    bgConfig: .solid(hex: "#2d1b4e"),
+                    defaultFontId: "zhi-mang-xing", defaultFontSize: 30, defaultColorHex: "#d4b8e8",
+                    presetText: "东风夜放花千树\n更吹落 星如雨\n宝马雕车香满路\n凤箫声动\n玉壶光转\n一夜鱼龙舞", presetDirection: "vertical"),
+        ArtTemplate(id: "preset-lu-you", name: "钗头凤", type: .preset,
+                    bgConfig: .solid(hex: "#8b1a1a"),
+                    defaultFontId: "lishu", defaultFontSize: 28, defaultColorHex: "#f5e8d0",
+                    presetText: "红酥手\n黄縢酒\n满城春色宫墙柳\n东风恶\n欢情薄\n一怀愁绪\n几年离索\n错 错 错", presetDirection: "vertical"),
+        ArtTemplate(id: "preset-nalan", name: "木兰花令", type: .preset,
+                    bgConfig: .solid(hex: "#c4d6d6"),
+                    defaultFontId: "fangsong", defaultFontSize: 26, defaultColorHex: "#3c4a4a",
+                    presetText: "人生若只如初见\n何事秋风悲画扇\n等闲变却故人心\n却道故人心易变", presetDirection: "vertical")
+    ]
+
+    static var allTemplates: [ArtTemplate] {
+        gradientTemplates + solidTemplates + presetTemplates
+    }
+
+    static func find(by id: String) -> ArtTemplate? {
+        allTemplates.first { $0.id == id }
+    }
+}

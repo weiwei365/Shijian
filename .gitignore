@@ -1,0 +1,19 @@
+# OS X
+.DS_Store
+
+# Xcode
+build/
+DerivedData/
+*.xcworkspace/
+ShiJian.xcodeproj/xcuserdata/
+ShiJian.xcodeproj/project.xcworkspace/
+*.moved-aside
+*.xcuserstate
+
+# Swift Package Manager
+.build/
+.swiftpm/
+
+# XCodeGen
+# 如果使用 xcodegen，你可以选择忽略 xcodeproj 文件夹，因为它随时可以通过 `xcodegen generate` 重新生成。
+# 这里我们选择只忽略个人的 xcuserdata，保留生成的 xcodeproj 骨架或者也行。为了让其他协作者无需每次都 run xcodegen，我们通常只过滤 xcuserdata，这已在上方列出。

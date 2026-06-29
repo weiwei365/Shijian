@@ -1,0 +1,24 @@
+{
+    "configurations": [
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:poetry-art-generator}/dielianhua-macos",
+            "name": "Debug Dielianhua (dielianhua-macos)",
+            "target": "Dielianhua",
+            "configuration": "debug",
+            "preLaunchTask": "swift: Build Debug Dielianhua (dielianhua-macos)"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:poetry-art-generator}/dielianhua-macos",
+            "name": "Release Dielianhua (dielianhua-macos)",
+            "target": "Dielianhua",
+            "configuration": "release",
+            "preLaunchTask": "swift: Build Release Dielianhua (dielianhua-macos)"
+        }
+    ]
+}
